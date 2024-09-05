@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive màn hình laptop */
+/* project-charter */
+.project-charter {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 20px;
+    margin: 30px;
+    gap: 20px;
+    background-color: blue;
+}
+
+/* goals */
+.goals {
+    border: 1px solid red;
+    padding: 30px;
+    background-color: #f1f3f5;
+}
+
+.goals-details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* team */
+.team {
+    border: 1px solid red;
+    padding: 30px;
+    background-color: #f1f3f5;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.team-details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* timeline */
+.timeline {
+    grid-row: span 2;
+    border: 1px solid red;
+    padding: 30px;
+    background-color: #f1f3f5;
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.timeline-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.icon-circle {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9775fa;
+    text-align: center;
+    line-height: 40px;
+    border: solid 1px #868e96;
+}
+
+.icon-text {
+    color: white;
+    font-size: 16px;
+}
+
+/* scopes */
+.scopes {
+    border: 1px solid red;
+    padding: 30px;
+    background-color: #f1f3f5;
+}
+
+.scopes-title {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+}
+
+.scopes-title h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* primary */
+.primary {
+    border: 1px solid red;
+    padding: 30px;
+    background-color: #f1f3f5;
+}
+
+.primary-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+/* line */
+.horizontal-line {
+    border-bottom: 1px solid #495057;
+}
+
+.horizontal-line-s {
+    border-bottom: 1px solid #ced4da;
+}
+
+.dashed-line {
+    border-bottom: 1px dashed #15aabf;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #1534be;
+}
+
+/* CSS cho màn hình tablet */
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+    .project-charter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-svg {
+        align-self: center;
+        justify-content: center;
+    }
+
+    .goals-details,
+    .scopes-title,
+    .team-details,
+    .timeline-details,
+    .primary-details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .scopes-title {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* CSS cho màn hình mobile */
+@media screen and (max-width: 767px) {
+    .project-charter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon-svg {
+        align-self: center;
+        justify-content: center;
+    }
+
+    .goals-details,
+    .team-details,
+    .timeline-details,
+    .primary-details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .scopes-title {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+}

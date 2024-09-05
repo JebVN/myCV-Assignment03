@@ -1,0 +1,86 @@
+/* CSS cho màn hình tablet */
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+
+    /* Tiêu đề banner */
+    .info-banner {
+        top: 10%;
+    }
+
+    /* css navbar */
+    .navbar-list {
+        margin: 0;
+    }
+
+    .navbar-list img {
+        display: none;
+    }
+
+    /* css about */
+    #target,
+    #personal-info {
+        padding: 30px;
+    }
+
+    /* css job-info */
+    .job-grid {
+        margin: 50px 100px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .job-title {
+        flex-direction: column;
+    }
+
+    .job-title h1 {
+        order: 1;
+    }
+
+    .job-title i {
+        margin-left: auto;
+    }
+
+    .details-favorites {
+        flex-wrap: wrap;
+    }
+
+    .details-favorites div {
+        flex: 1 0 30%;
+    }
+
+    .details-favorites-box {
+        align-items: start;
+    }
+
+
+    /* CSS chứng chỉ giải thưởng */
+    .certificate-details {
+        margin: 50px;
+        gap: 20px;
+    }
+
+    .cer-details-data {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* css dự án */
+    #project h1,
+    .project-list {
+        margin: 50px;
+    }
+
+    .project-list {
+        gap: 10px
+    }
+
+    .project-icon {
+        flex-direction: column;
+    }
+
+    /* css footer */
+    #footer {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,135 @@
+/* CSS cho màn hình mobile */
+@media screen and (max-width: 767px) {
+
+    /* Tiêu đề banner */
+    .img-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .img-banner img {
+        height: 100%;
+        width: auto;
+    }
+
+    .info-banner {
+        top: 20%;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .info-banner h1 {
+        font-size: 40px;
+    }
+
+    .info-banner span {
+        font-size: 20px;
+    }
+
+
+    /* css navbar */
+    .navbar-list {
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-title {
+        border: none;
+        align-items: start;
+        justify-content: start;
+        gap: 5px;
+    }
+
+    a.navbar-title.col.col-md-2.col-xl-2 {
+        padding: 20px 40px;
+    }
+
+    .navbar-list img {
+        display: none;
+    }
+
+    /* CSS about */
+    #target,
+    #personal-info {
+        padding: 30px;
+    }
+
+    #about .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* css job-info */
+    .job-grid {
+        margin: 50px 10px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .details-favorites {
+        flex-wrap: wrap;
+    }
+
+    .details-favorites div {
+        flex: 1 0 30%;
+    }
+
+    .details-favorites-box {
+        align-items: start;
+    }
+
+    /* css dự án */
+    .project-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #project h1,
+    .project-list {
+        margin: 50px 10px;
+    }
+
+    .project-title,
+    .project-icon {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /* css chứng chỉ giải thưởng */
+    .certificate-details {
+        margin: 50px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .cer-details-data,
+    .ruler-break {
+        grid-column: 1 / span 3;
+    }
+
+    .ruler-break {
+        height: 3px;
+    }
+
+    .cer-details-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* css footer */
+    #footer {
+        margin-top: 50px;
+    }
+
+    .footer-link a {
+        flex-direction: column;
+    }
+}

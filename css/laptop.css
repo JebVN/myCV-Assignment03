@@ -1,0 +1,380 @@
+/* Responsive màn hình laptop */
+@media only screen and (min-width:1141px) {}
+
+/* Css banner */
+#banner {
+    width: auto;
+    height: auto;
+}
+
+.img-banner img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    /* căn giữa theo dọc ngang */
+    position: relative;
+    /* thiết lập vị trí tương đối */
+    overflow: hidden;
+    /* ẩn nội dung thừa */
+    opacity: 0.8;
+    /* độ mờ 0.8 */
+    filter: brightness(50%);
+    /* độ sáng còn 50% */
+    border: 1px solid #c6cdda;
+    /* Viền */
+    border-radius: 3px;
+    /* làm tròn góc */
+    box-shadow: 0 0 0 3px #c6cdda;
+    /* để tạo hiệu ứng viền */
+}
+
+.info-banner {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* căn giữa cả hai trục ngang và dọc */
+    text-align: center;
+    color: white;
+}
+
+.info-banner h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.info-banner span {
+    font-size: 25px;
+    margin: 0;
+}
+
+/* CSS navbar */
+.navbar-list {
+    margin: 0 200px;
+
+}
+
+.navbar-title {
+    display: flex;
+    flex-direction: row;
+    border-left: #f3e7e7 solid 0.5px;
+    border-right: #f3e7e7 solid 0.5px;
+    margin-right: -1px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+a.navbar-title.col.col-md-2.col-xl-2 {
+    padding: 30px 20px;
+}
+
+
+.navbar-title:hover {
+    background-color: #f3e7e7;
+}
+
+.container a {
+    text-decoration: none;
+    /* bỏ trang trí */
+    color: #000;
+    padding: 0 20px;
+}
+
+.icons {
+    color: rgb(78, 156, 180);
+}
+
+.navbar-list {
+    position: relative;
+}
+
+.navbar-list img {
+    position: absolute;
+    border: 3px solid #f1f3f5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #f1f3f5;
+    width: auto;
+    height: 200px;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* CSS about */
+#target,
+#personal-info {
+    padding: 100px;
+}
+
+#target:hover,
+#personal-info:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+#target p {
+    letter-spacing: 0.7px;
+    /* khoảng cách các chữ */
+    line-height: 1.5;
+    /* chiều cao các hàng chữ */
+}
+
+#personal-info ul {
+    padding: 0;
+}
+
+/* CSS job-info */
+.job-grid {
+    margin: 50px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.div-job-info {
+    padding: 40px 30px 100px 30px;
+    border: #d8e4e7 solid 0.5px;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-content: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 2px #ced4da;
+}
+
+.div-job-info:hover {
+    background-color: #f5eff1;
+}
+
+.job-title {
+    display: flex;
+    justify-content: space-between;
+    /* căn đều 2 bên */
+}
+
+.job-title i {
+    font-size: 50px;
+}
+
+.span-detailsjob {
+    line-height: 20px;
+    letter-spacing: 0.3;
+}
+
+.job-time {
+    font-style: italic;
+}
+
+.job-present {
+    background-color: rgb(0, 162, 255);
+    padding: 5px 12px;
+    color: #fff;
+    border-radius: 12px;
+}
+
+/* Đổi màu kí hiệu danh sách li */
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.custom-list li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #339af0;
+    font-size: 30px;
+}
+
+/* CSS sở thích */
+.details-favorites {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.details-favorites-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.details-favorites-box i {
+    font-size: 25px;
+    padding: 5px;
+    color: #199cdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: #199cdb solid 1px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.details-favorites-box h6 {
+    flex-grow: 1;
+}
+
+/* Thanh kĩ năng */
+.color-skill0 {
+    background: #199cdb;
+    display: inline-block;
+    height: 4px;
+    margin-right: 10px;
+    width: 50px;
+    border: solid 1px #199cdb;
+}
+
+.color-skill1 {
+    background: #fff;
+    display: inline-block;
+    height: 4px;
+    margin-right: 10px;
+    width: 50px;
+    border: solid 1px #e7f5ff;
+}
+
+/* CSS chứng chỉ giải thưởng */
+.certificate-details {
+    margin: 50px 200px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.section-title {
+    grid-column: 1 / span 3;
+}
+
+.cer-details-data {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
+}
+
+.ruler-break {
+    background-color: orange;
+}
+
+.ruler-long-break {
+    height: 3px;
+    grid-column: 1 / span 3;
+}
+
+.cer-details-data img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cer-details-data h6 {
+    text-transform: uppercase;
+}
+
+.cer-details-data p {
+    line-height: 20px;
+    letter-spacing: 0.3;
+}
+
+/* CSS dự án */
+#project h1 {
+    margin: 50px 200px;
+}
+
+.project-list {
+    margin: 50px 200px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.project-data {
+    margin-bottom: -1px;
+}
+
+.project-data:hover {
+    background-color: #f5eff1;
+}
+
+.project-data img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-data h5 {
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.project-border {
+    border: 0.5px solid #dee2e6;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.project-time {
+    border: solid 1px #74c0fc;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #74c0fc;
+    color: #fff;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: stretch;
+}
+
+.project-details div {
+    padding: 25px;
+    border-top: 0.5px solid #dee2e6;
+}
+
+/* CSS footer */
+#footer {
+    padding: 50px 0;
+}
+
+.footer-link i {
+    font-size: 120%;
+    color: #74c0fc;
+}
+
+.footer-link {
+    font-size: 120%;
+}
+
+.footer-link a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-link a:hover {
+    background-color: #f5eff1;
+}
